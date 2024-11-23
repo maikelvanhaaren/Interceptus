@@ -6,6 +6,7 @@
         <Version>0.0.1-beta1</Version>
         <IsPackable>true</IsPackable>
         <Nullable>enable</Nullable>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
     
     <ItemGroup>
@@ -17,6 +18,7 @@
     </ItemGroup>
     
     <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
         <None Include="$(OutputPath)\Interceptus.Generator.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
         <PackageReference Include="PipelineNet" Version="0.10.1" />
